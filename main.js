@@ -42,27 +42,31 @@
 // }
 
 
-var weight = 41;
-var height = 155;
-var BMI = weight/(height*height);
-if (BMI < 18.5) {
-	console.log('Thin');
-} else if(BMI >= 18.5 && BMI < 25){
-	console.log('Normal');
-}else{
-	console.log('Fat');
-}
+// var weight = 41;
+// var height = 155;
+// var BMI = weight/(height*height);
+// if (BMI < 18.5) {
+// 	console.log('Thin');
+// } else if(BMI >= 18.5 && BMI < 25){
+// 	console.log('Normal');
+// }else{
+// 	console.log('Fat');
+// }
+
 
 var weight = 41;
 var height = 155;
 var BMI = weight / Math.pow(height, 2) * 10000;
-if (BMI < 18.5) {
-	console.log('Thin');
-} else if(BMI >= 18.5 && BMI < 25){
-	console.log('Normal');
-}else{
-	console.log('Fat');
-}
+console.log("Your BMI is: " + BMI);
 
+if (BMI < 18.5) {
+	console.log('Underweight');
+} else if(BMI >= 18.5 && BMI < 25){
+	console.log('Normal weight');
+} else if(BMI >= 25 && BMI < 29.9){
+	console.log('Overweight');
+}else{
+	console.log('Obese');
+}
 
 
